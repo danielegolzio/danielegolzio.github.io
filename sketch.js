@@ -1,21 +1,14 @@
-var theta = 0;
 let button;
+let input;
+
 var bgcounter = 0
 var bgDark = (40, 40, 40)
 var bgLight = (251, 241, 199)
-
-function preload() {
-    img = loadImage("peepoduck.gif");
-}
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight, WEBGL);
     canvas.position(0, 0);
     canvas.style('z-index', '-1');
-}
-
-function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -25,5 +18,13 @@ function draw() {
     stroke(235, 219, 178);
     strokeWeight(1);
     texture(img);
-    box(windowWidth / 6);
+    box(windowHeight / 4);
+}
+
+function preload() {
+    img = loadImage("peepoduck.gif");
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
