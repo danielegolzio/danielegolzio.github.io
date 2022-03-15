@@ -1,4 +1,8 @@
 var theta = 0;
+let button;
+var bgcounter = 0
+var bgDark = (40, 40, 40)
+var bgLight = (251, 241, 199)
 
 function preload() {
     img = loadImage("peepoduck.gif");
@@ -15,13 +19,11 @@ function windowResized() {
 }
 
 function draw() {
-    theta++;
-    background(40, 40, 40)
+    background(bgDark)
+    rotateX(-mouseY * 0.01)
+    rotateY(-mouseX * 0.01)
     stroke(235, 219, 178);
     strokeWeight(1);
-    rotateX(frameCount * 0.01);
-    // rotateY(frameCount * 0.01);
-    rotateZ(frameCount * 0.01);
     texture(img);
-    box(windowHeight / 4);
+    box(windowWidth / 6);
 }
