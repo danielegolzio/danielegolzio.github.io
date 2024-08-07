@@ -20,6 +20,7 @@ footer {
 html {
     font-size: large;
     font-family: monospace;
+    background-color: rgb(40, 40, 40);
 }
 
 a {
