@@ -1,3 +1,10 @@
+.parent {
+  display: flex;
+  align-items: center; /* Aligns children (header) vertically */
+  justify-content: center; /* Aligns children horizontally */
+  height: 100vh; /* Set to the height of the viewport or container */
+}
+
 header {
     position: relative;
     z-index: 2;
