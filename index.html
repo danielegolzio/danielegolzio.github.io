@@ -5,18 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>danielegolzio</title>
+    <title>Daniele Golzio</title>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-
-<!--     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
-    <script src="sketch.js"></script> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-        <header><p>[COMING SOON]</p></header>
-    <footer>
-        <a href="https://github.com/danielegolzio">[github]</a>
-    </footer>
+    <header>
+        <h1>[Archive]</h1>
+        <p>Daniele Golzio - [<a href="https://github.com/danielegolzio">github</a>] [<a href="https://www.linkedin.com/in/daniele-golzio/">linkedin</a>]</p>
+    </header>
+
+    <div class="gallery" id="gallery-container">
+    </div>
+
+    <script>
+        const galleryContainer = document.getElementById('gallery-container');
+        const images = [];
+
+        for (let i = 1; i <= 34; i++) {
+            images.push(`/images/boat+greece-2023-fuji/img${i}.jpg`);
+        }
+        for (let i = 1; i <= 37; i++) {
+            images.push(`/images/first-roll-2023/img${i}.jpg`);
+        }
+        for (let i = 1; i <= 37; i++) {
+            images.push(`/images/greece-2023-ilford-delta/img${i}.jpg`);
+        }
+        for (let i = 1; i <= 36; i++) {
+            images.push(`/images/kings-night-2023/img${i}.jpg`);
+        }
+
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        shuffle(images);
+
+        images.forEach((src, index) => {
+            const a = document.createElement('a');
+            a.href = src;        // Link to the full image
+            a.target = "_blank"; // Open in a new tab
+
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = `Image ${index + 1}`;
+
+            a.appendChild(img);
+            galleryContainer.appendChild(a);
+        });
+    </script>
 </body>
+
+</html>

@@ -1,0 +1,28 @@
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+
+  }
+  
+  .gallery img {
+    display: block; /* Prevent any extra space at the bottom of images */
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+
+}
