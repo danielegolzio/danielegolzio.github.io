@@ -55,6 +55,7 @@
             const img = document.createElement('img');
             img.src = src;
             img.alt = `Image ${index + 1}`;
+            img.loading="lazy";
 
             a.appendChild(img);
             galleryContainer.appendChild(a);
