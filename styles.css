@@ -20,9 +20,8 @@ footer {
   }
   
   .gallery img {
-    display: block; /* Prevent any extra space at the bottom of images */
+    display: block;
     width: 100%;
     max-width: 250px;
     object-fit: cover;
-
 }
