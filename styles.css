@@ -2,9 +2,13 @@ header {
     text-align: center;
 }
 
-footer {
+.contact {
     text-align: center;
+    /* border: 1px solid #4c547a;
+    padding: 10px;
+    margin: 0 100px; */
 }
+
 
 .gallery {
     display: flex;
@@ -16,7 +20,6 @@ footer {
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px 10px;
-
   }
   
   .gallery img {
@@ -24,4 +27,31 @@ footer {
     width: 100%;
     max-width: 250px;
     object-fit: cover;
+}
+
+.project {
+    text-align: center;
+}
+
+/* Default state */
+a {
+    color: #4c547a;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+/* Hover state */
+a:hover {
+    color: #4c547a; /* Color when mouse is over the link */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Active state */
+a:active {
+    color: #4c547a; /* Color when the link is being clicked */
+}
+
+/* Visited state */
+a:visited {
+    color: #4c547a; /* Color after the link has been visited */
 }
