@@ -8,7 +8,7 @@
     <title>Daniele Golzio</title>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-copy.css">
 </head>
 
 <body>
@@ -18,11 +18,13 @@
     </header>
 
     <div class="gallery" id="gallery-container">
+        <!-- Images will be loaded here by JavaScript -->
     </div>
 
     <script>
         const galleryContainer = document.getElementById('gallery-container');
 
+        // Define your image folders and the number of images in each
         const imageFolders = [
             { folder: '/images/boat+greece-2023-fuji', count: 33 },
             { folder: '/images/first-roll-2023', count: 21 },
@@ -33,14 +35,17 @@
             { folder: '/images/torino-23', count: 35 }
         ];
 
+        // Create an array to hold all image paths
         const images = [];
 
+        // Populate the images array with paths from each folder
         for (let folder of imageFolders) {
             for (let i = 1; i <= folder.count; i++) {
                 images.push(`${folder.folder}/img${i}.jpg`);
             }
         }
 
+        // Shuffle the images array
         function shuffle(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -50,6 +55,7 @@
         }
 
         async function loadImages() {
+            // Shuffle the images before displaying them
             shuffle(images);
 
             for (let i = 0; i < images.length; i++) {

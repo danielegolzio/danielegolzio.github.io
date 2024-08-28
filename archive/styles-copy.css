@@ -7,7 +7,7 @@ header {
 }
 
 .gallery {
-    column-count: 4;
+    column-count: 4; /* Adjust the number of columns here */
     column-gap: 7px;
     max-width: 1400px;
     margin: 0 auto;
