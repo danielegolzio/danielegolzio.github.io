@@ -6,6 +6,10 @@ header {
     text-align: center;
 }
 
+img {
+    content-visibility: auto;
+}
+
 .contact {
     text-align: center;
 }
