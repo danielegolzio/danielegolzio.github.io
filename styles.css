@@ -6,6 +6,10 @@ header {
     text-align: center;
 }
 
+.contact {
+    text-align: center;
+}
+
 .gallery {
     column-count: 4;
     column-gap: 7px;
