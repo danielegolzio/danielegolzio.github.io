@@ -1,9 +1,55 @@
+@font-face {
+    font-family: 'madegoodtime';
+    src: url('fonts/madegoodtime/madegoodtimegroteskpersonaluse-webfont.woff2') format('woff2'),
+         url('fonts/madegoodtime/madegoodtimegroteskpersonaluse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pulp_fiction_m54regular';
+    src: url('fonts/pulp-fiction/pulp_fiction_m54-webfont.woff2') format('woff2'),
+         url('fonts/pulp-fiction/pulp_fiction_m54-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pulp_fiction_m54italic';
+    src: url('fonts/pulp-fiction/pulp_fiction_italic_m54-webfont.woff2') format('woff2'),
+         url('fonts/pulp-fiction/pulp_fiction_italic_m54-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Tahoma', sans-serif;
+    background-color: #EFEFEF;
 }
 
 header {
     text-align: center;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #262228;
+    /* text-shadow: 0px 3px 0px #a10f0f; */
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #31345a; */
 }
 
 .contact {
@@ -34,19 +80,20 @@ header {
 }
 
 .main {
-    color: #4c547a;
+    color: 	#262228;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .main:hover {
-    color: #4c547a;
+    color: 	#262228;
     text-decoration: underline;
 }
 
 .main:active {
-    color: #4c547a;
+    color: 	#262228;
 }
 
 .main:visited {
-    color: #4c547a;
+    color: 	#262228;
 }
