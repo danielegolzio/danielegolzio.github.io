@@ -1,77 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniele Golzio</title>
-
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <h1>Daniele Golzio</h1>
-        <p><a class="main" href="contact.html">Contact</a></p>
-    </header>
-
-    <div class="gallery" id="gallery-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="menu">
+      <p class="name">Daniele</p>
+      <p class="name">Golzio</p>
+      <a href="pages/projects/index.html">projects/</a>
+      <a href="pages/archive/index.html">archive/</a>
+      <a href="pages/contact/index.html">contact/</a>
+      <a href="#">home/</a>
     </div>
 
-
-    <script>
-        const galleryContainer = document.getElementById('gallery-container');
-
-        const imageFolders = [
-            { folder: '/images/boat+greece-2023-fuji', count: 33 },
-            { folder: '/images/first-roll-2023', count: 21 },
-            { folder: '/images/greece-2023-ilford-delta', count: 33 },
-            { folder: '/images/kings-night-2023', count: 33 },
-            { folder: '/images/dolomiti-2023-p1', count: 38 },
-            { folder: '/images/dolomiti-2023-p2', count: 38 },
-            { folder: '/images/torino-23', count: 35 }
-        ];
-
-        const images = [];
-
-        for (let folder of imageFolders) {
-            for (let i = 1; i <= folder.count; i++) {
-                images.push(`${folder.folder}/img${i}.jpg`);
-            }
-        }
-
-        function shuffle(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-            return array;
-        }
-
-        function loadImages() {
-            shuffle(images);
-
-            for (let i = 0; i < images.length; i++) {
-                const src = images[i];
-
-                const a = document.createElement('a');
-                a.href = src;
-                a.target = "_blank";
-
-                const img = document.createElement('img');
-                img.src = src;
-                img.alt = `Image ${i + 1}`;
-
-                a.appendChild(img);
-                galleryContainer.appendChild(a);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', loadImages);
-    </script>
-</body>
-
-
+    <div class="filler">
+      <img src="pictures/R1-01012-005A.JPG" />
+    </div>
+  </body>
 </html>
