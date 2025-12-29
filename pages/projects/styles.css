@@ -30,27 +30,6 @@ body {
   background-color: #121212;
 }
 
-/* .gallery {
-  margin-left: 250px;
-  max-width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3px;
-} */
-
-.gallery {
-  margin-left: 230px;
-  column-count: 2;
-  column-gap: 0;
-}
-
-.gallery img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
 .menu {
   position: fixed;
   top: 0;
@@ -59,7 +38,6 @@ body {
 }
 
 .menu a {
-  /* color: #515050; */
   color: #9a9a9a;
   text-decoration: none;
   font-size: 40px;
@@ -71,10 +49,71 @@ body {
 }
 
 .menu a:hover {
-  /* background: rgb(222, 145,  0); */
-  /* color: #de9100; */
   color: #9e6e3a;
 }
+
+.project {
+  width: 100%;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-link:hover .project {
+  transform: translateY(-4px);
+  transition: 0.2s ease;
+}
+
+
+/* fixed aspect ratio container */
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.projects-grid {
+  margin-left: 270px; /* clears fixed menu */
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* no stretching */
+  display: block;
+}
+
+.project-info {
+  padding: 12px;
+}
+
+.project-title {
+  color: #9e6e3a;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Tahoma", sans-serif;
+}
+
+.project-desc {
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-top: 6px;
+  font-family: "Tahoma", sans-serif;
+}
+
 
 .name {
   color: #9e6e3a;

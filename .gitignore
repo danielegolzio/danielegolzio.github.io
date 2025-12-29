@@ -1,0 +1,38 @@
+# Node / frontend dependencies
+node_modules/
+bower_components/
+
+# Build outputs
+dist/
+build/
+out/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment / config
+.env
+.env.local
+.env.*.local
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Backup / temporary files
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Uncompressed folder you want hidden
+uncompressed/
+
+# Optional: cache / generated files
+.cache/
