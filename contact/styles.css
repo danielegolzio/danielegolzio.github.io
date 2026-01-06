@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "madegoodtime";
+  src: url("fonts/madegoodtime/madegoodtimegroteskpersonaluse-webfont.woff2")
+      format("woff2"),
+    url("fonts/madegoodtime/madegoodtimegroteskpersonaluse-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pulp_fiction_m54regular";
+  src: url("fonts/pulp-fiction/pulp_fiction_m54-webfont.woff2") format("woff2"),
+    url("fonts/pulp-fiction/pulp_fiction_m54-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pulp_fiction_m54italic";
+  src: url("fonts/pulp-fiction/pulp_fiction_italic_m54-webfont.woff2")
+      format("woff2"),
+    url("fonts/pulp-fiction/pulp_fiction_italic_m54-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #121212;
+}
+
+.main {
+  margin-left: 230px;
+  text-align: left;
+  background-image: url(../pictures/R1-01013-011A.webp);
+  background-size: cover;
+  width: calc(100vw - 230px);
+  height: 100vh;
+}
+
+
+.main a {
+  color: #d3d1d1;
+  font-size: 40px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: bold;
+  display: block;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.main a:hover {
+  color: #9e6e3a;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+}
+
+.menu a {
+  color: #9a9a9a;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.menu a:hover {
+  color: #9e6e3a;
+}
+
+.name {
+  color: #9e6e3a;
+  font-size: 60px;
+  text-decoration: none;
+  font-family: "Tahoma", sans-serif;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .menu a {
+    color: #9a9a9a;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Tahoma", sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .name {
+    color: #9e6e3a;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: "Tahoma", sans-serif;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main {
+    margin-left: 150px;
+    text-align: left;
+    background-image: url(../../pictures/R1-01013-011A.JPG);
+    background-size: cover;
+    width: calc(100vw - 20px);
+    height: 60vh;
+  }
+
+  .main a {
+    color: #d3d1d1;
+    font-size: 20px;
+    font-family: "Tahoma", sans-serif;
+    font-weight: bold;
+    display: block;
+    padding-left: 5px;
+    /* padding-top: 5px;  */
+    /* padding: 20px; */
+    text-decoration: none;
+  }
+}
