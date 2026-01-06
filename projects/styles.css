@@ -65,10 +65,10 @@ body {
   display: block;
 }
 
-.project-link:hover .project {
+/* .project-link:hover .project {
   transform: translateY(-4px);
   transition: 0.2s ease;
-}
+} */
 
 
 /* fixed aspect ratio container */
